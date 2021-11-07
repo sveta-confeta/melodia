@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'Bebas Neue';    /*при конвертировании эти данные содержатся в файле css вместе со шрифтами*/
+    src: url('../fonts/BebasNeueRegular.woff2') format('woff2'), /*только нужно правильно прописать путь к папке*/
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ 
+ 
+ 
+ 
+ *{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: #635854;
+    padding: 12px 0px;
+    border-bottom: 4px solid #3596F5;
+}
+
+.navbar{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar_menu{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.navbar_item:not(:last-child){
+    margin-right: 80px;
+}
+.navbar a{
+    text-decoration: none;
+    color:#fff;
+
+
+}
+
+.navbar_contacts{
+    padding-left: 20px;
+}
+
+.navbar_contacts a{
+    display: block;
+    font-weight: bold;
+font-size: 17px;
+line-height: 20px;
+}
+.navbar_text{
+    color:#fff;
+    font-size: 14px;
+line-height: 16px;
+text-align: right;
+display: block;
+margin-bottom: 4px;
+}  
+
+.humburger-menu{   /*мобильное меню-кнопка*/
+    display: none;
+    background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' fill='%23ffffff' enable-background='new 0 0 512 512' height='512' viewBox='0 0 512 512' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z'/%3E%3Cpath d='m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z'/%3E%3Cpath d='m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z'/%3E%3C/svg%3E");
+    background-color: transparent;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    transition: background-image 0.5s;
+    
+}
+
+.humburger-menu-active{  /*мобильное меню-кнопка*/
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' fill='%23ffffff' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='348.333px' height='348.334px' viewBox='0 0 348.333 348.334' style='enable-background:new 0 0 348.333 348.334;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85 c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563 c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85 l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554 L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+
+}  
+   
+  
+      
+
+.main{
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: flex;
+    padding-bottom:99px;
+}
+
+
+.main-image{
+    padding:0 20px;
+   
+}
+
+.main-info{
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.home-image path{ /*прописываем стили для элементов этажей-изначально ои скрыты*/ 
+  opacity: 0;
+  cursor: pointer;
+}
+
+.home-image path:hover{ /* а по наведению на этаж становятся видимыми*/
+    opacity: 1;  
+}
+.counter-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+path.current-floor{
+    opacity: 1;
+}
+
+.counter-button{
+    background-color: #fff;
+    border:none;
+    cursor: pointer;
+}
+.counter-arrow-down{  /*переворачиваем иконку стрелкой вниз*/
+    transform: rotateX(180deg);
+}
+
+.main-title{
+    font-family: "Bebas Neue",sans-serif;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 37px;
+    color:#635854;
+    margin: 0;
+}
+
+.floor-counter{
+    font-family: "Bebas Neue",sans-serif;
+    color:#635854;
+    font-size: 124px;
+}
+
+.button-primary{
+    
+background: #3596F5;
+border-radius: 6px;
+color:#fff;
+border:none;
+padding: 16px 36px;
+cursor: pointer;
+}
+.modal{
+    position: fixed;
+    left: 0; /*приклеиваем к верхнему левому краю*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    display: flex;/*сделаем родительский элемент гибким*/
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /*после того,как модальное окно готово полностью-мы ему устанавливаем прозрачность ноль и */
+    transform: scale(0);/* ...и трансформируем,сжимаем в точку,в 0  */
+    transition: opacity 0.7s;
+}
+
+.is-open{  /*класс который мы будем добавлять через js и будет открывать модальное окно*/
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-dialog{
+    max-width: 1000px;
+    min-height: 565px;
+    background-color: #fff;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.5s, opacity 0.5s;
+    transition-delay: 0.7s;
+    opacity: 0;
+    
+}
+
+.is-open > .modal-dialog{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-image{
+    background: #EBEBEB;
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+}
+.modal-title{
+    font-family: "Bebas Neue",sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.modal-info{
+    width: 40%;
+    padding: 50px 46px;
+}
+
+.flat-list{
+    padding: 0;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.flat-item{
+    margin-bottom: 10px;
+}
+
+.flat-link{
+    text-decoration: none;
+    line-height: 19px;
+    color:#635854;
+    font-size: 16px;
+}
+
+.flat-link:hover{
+    color:#3596F5;
+    text-decoration:underline;
+}
+
+.modal-alert{
+    font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #635854;
+margin-top: 56px;
+}
+
+.modal-close-button{
+    position: absolute;
+    top: 38px;
+    right: 27px;
+    border:none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.flats path{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.flats path:hover{
+    opacity: 1;
+}
+.footer{
+    background-color: #D7D7D7;
+    border-top: 4px solid #3596F5;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    min-height: 140px;
+    padding: 0 20px;
+}
+
+.footer-content-contact{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-right: 39px;
+}
+.footer-contact{
+    margin-right: 60px;
+}
+.footer-contact p{
+    font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+margin: 0;
+margin-bottom:5px;
+
+
+color: #635854;
+}
+.footer-contact span{
+    font-weight: bold;
+font-size: 17px;
+line-height: 20px;
+
+color: #635854;
+}
+
+.footer-wrapper{
+    display: flex;
+}
+
+.footer-info a{
+    font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+padding-left: 20px;
+text-decoration-line: underline;
+
+color: #635854;
+
+}
+.footer-cocial{
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+.footer-cocial img{
+    margin-left: 20px;
+}
+
+/*класс добавляемый js в модальном окне*/
+
+.active-hover a{
+    color:#3596F5;
+    text-decoration:underline;
+  }
+
+ /*двойная вложенность для обеспечения одинаковой специфичности*/
+.flats .list-hover {
+    opacity: 1;
+  }

@@ -1,0 +1,294 @@
+@media(max-width:1108px){
+    ul.navbar-menu{
+        margin: 0;
+       
+    }
+    .navbar_item:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .main-image{
+        max-width: 500px;
+        height: 500px;
+    }
+
+    svg.home-image{
+        max-width: 500px;
+        height: 500px;
+    }
+    .main{
+        padding: 0;
+    }
+    .main-info{
+        padding: 30px 0;
+    }
+    .footer-content{
+        min-height: 130px;
+    }
+    .footer-info a{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .modal-dialog{
+        max-width: 800px;
+        max-height: 350px;
+    }
+
+    svg.flats{
+        width: 350px;
+        height: auto;
+       padding-right: 40px;
+    }
+
+    .modal-image{
+        width: 50%;
+        padding-bottom: 0;
+      }
+      .modal-info{
+          padding-bottom: 0;
+      }
+
+
+}
+
+@media (max-width:919px) {  
+    .navbar_nav{    /*nav*/ 
+        position: absolute;  /* мобильная навигация-прямоугольник*/
+        right: 50px;
+        top: -350px;
+        background-color:  #635854;
+        z-index: 666;
+        border-radius: 15px;
+        transition: top 0.5s;
+        box-shadow: 4px 4px 10px #363433;
+    }
+
+    .navbar_item:not(:last-child){
+        margin-right: 0;
+    }
+
+    .navbar_menu{   /*ul*/
+        flex-direction: column;
+       align-items: center;
+       margin-right: 40px;
+    }
+    .navbar_item{  /*li*/
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    .navbar_contacts{
+        margin-right: 50px;
+    }
+
+    .menu-active{
+        top: 0;
+    }
+
+    .humburger-menu{
+        display: block;
+    }
+    .main-title{
+        font-size: 30px;
+    }
+
+    .floor-counter{
+        font-size: 100px;
+    }
+
+    .button-primary{
+        font-size: 14px;
+    }
+
+    .navbar{
+        position: relative;
+        padding: 15px;
+    }
+
+    .navbar_text{
+        text-align: center;
+    }
+
+    .footer-content{
+        min-height: 100px;
+    }
+
+    .modal-dialog{
+        max-width: 700px;
+        max-height: 535px;
+      
+    }
+
+    .modal-image{
+       
+        padding-left: 20px;
+      
+           
+    }
+}
+
+
+@media (max-width:813px){
+    .main-image{
+        max-width: 400px;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom:15px;
+    }
+
+    svg.home-image{
+        max-width: 400px;
+        height: auto;
+    }
+
+    main{
+        padding-top: 15px;
+    }
+}
+
+@media (max-width:759px){
+
+    .main{
+        display: block;
+    }
+    .main-image{
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    svg.home-image{
+        margin: 0 auto;
+    }
+    .main-info{
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .counter-arrow-up{
+        margin-top: 20px;
+    }
+
+    .counter-arrow-down{
+        margin-bottom: 20px;
+    }
+   
+    .footer-info{
+        max-width: 200px;
+    }
+    .footer-wrapper{
+        display: block;
+    }
+    .footer-contact{
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .footer-contact p{
+        margin-bottom: 0;
+    }
+    .footer-cocial img{
+        margin-left: 15px;
+    }
+
+    .modal-dialog{
+        max-width: 490px;
+        min-height: 435px;
+      
+    }
+
+    .modal-image{
+        padding: 0;
+        padding-top: 10px;
+        width: 45%;
+    }
+    svg.flats{
+        width: 270px;
+        height: auto;
+    }
+    .modal-info{
+        padding: 10px;
+        width: 50%;
+    }
+    .modal-title{
+        margin-bottom: 15px;
+    }
+    .flat-list{
+        margin: 0;
+    }
+
+    .modal-alert{
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width:504px){
+ .footer-content{
+     display: block;
+     margin-top: 15px;
+     padding-bottom: 15px;
+ }
+ .modal-dialog{
+    max-width: 350px;
+    min-height: 600px;
+    flex-direction: column;
+  
+}
+
+.modal-image{
+    padding: 0;
+    padding-top: 10px;
+    width: 100%
+}
+
+.modal-close-button{
+    background-color: transparent;
+    top: 15px;
+    right:15px;
+}
+svg.flats{
+   padding-right: 0;
+
+}
+.modal-info{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    overflow-y: scroll;
+}
+.modal-title{
+   margin-bottom: 10px;
+}
+
+}
+
+@media (max-width:424px){
+    .main-image{
+        max-width: 350px;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom:15px;
+    }
+
+    svg.home-image{
+        max-width: 350px;
+        height: auto;
+    }
+    .navbar_contacts{
+        margin-right: 20px;
+    }
+    .navbar_contacts a{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .navbar_text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .footer-info{
+        margin-top: 20px;
+    }
+}
